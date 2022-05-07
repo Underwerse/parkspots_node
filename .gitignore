@@ -56,3 +56,4 @@ ui/uploads/*
 !ui/uploads/.gitkeep
 !ui/thumbnails/.gitkeep
 ui/thumbnails/*
+.vercel

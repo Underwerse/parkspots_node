@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon start ./src/app.js",
+    "start": "node ./src/app.js",
     "test": "mocha --timeout 15000 './src/test'",
     "lint": "eslint"
   },
