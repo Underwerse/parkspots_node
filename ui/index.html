@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='fi'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<link rel='stylesheet' type='text/css' href='css/main.css'>
+	<link rel='stylesheet' type='text/css' href='css/header.css'>
+	<link rel='stylesheet' type='text/css' href='css/footer.css'>
+	<link rel='stylesheet' type='text/css' href='css/map.css'>
+	<link rel='stylesheet' type='text/css' href='css/media.css'>
+	<link rel="stylesheet" href="css/add_parkspot.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	<title>Ilmaparkki</title>
+</head>
+
+<body>
+	<div id='container'>
+		<script src="./js/header.js"></script>
+
+		<main>
+			<section class="map">
+				<input id="searchInput" class="controls hidden" type="text" placeholder="Hae osoite">
+				<div id="map"></div>
+				
+			</section>
+			<div class="popup-bg-parkspot">
+        <div class="popup-parkspot">
+            <img class="close-popup" src="./media/img/close.png" alt="" onclick="closePopup('.popup-bg-parkspot')">
+            <h2 id="addFormTitle">Add new parkspot</h2>
+							<form action="http://localhost:5000/parkspots/add" method="post" class="light-border"
+								enctype="multipart/form-data" id="addParkspotForm">
+								<input class="formAddress" type="text" name="address" placeholder="Address">
+								<input class="formLat" type="text" name="lat" type="hidden">
+								<input class="formLng" type="text" name="lng" type="hidden">
+								<input class="formDuration" type="number" step="1" name="duration" placeholder="Duration">
+								<input class="formparkqty" type="number" step="1" name="parkqty"
+										placeholder="Regular parking plases qty">
+								<input class="formElectricqty" type="number" step="1" name="electricqty"
+										placeholder="Electric parking plases qty">
+								<button class="formAddBtn" type="submit">Add parkspot</button>
+							</form>
+        </div>
+			</div>
+
+			<div class="popup-bg-image">
+				<div class="popup-image">
+						<img class="close-popup" src="./media/img/close.png" alt="" onclick="closePopup('.popup-bg-image')">
+						<h2 id="addFormTitle">Add new image</h2>
+							<form action="http://localhost:5000/parkspots/add/image" method="post" class="light-border"
+								enctype="multipart/form-data" id="addImageForm">
+								<input class="formParkspotId" type="text" name="parkspotId" type="hidden">
+								<input class="formImage" type="file" name="parkspotImage" accept="image/*" placeholder="Choose file">
+								<button class="formAddBtn" type="submit">Upload image</button>
+							</form>
+				</div>
+			</div>
+    </div>
+		</main>
+
+		<script src="./js/aside.js"></script>
+
+		<script src="./js/footer.js"></script>
+	</div>
+
+	<script src="./js/serialize.js"></script>
+	<script src="./js/check-login.js"></script>
+	<script src="./js/map.js"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh92EwJSgERcoXkFE8TPIIsiPCXLeRO4g&libraries=places&callback=initMap">
+  </script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

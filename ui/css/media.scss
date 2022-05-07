@@ -1,0 +1,91 @@
+$width: 1280px;
+
+@media (min-width: 250px) {
+  .main-menu {
+    height: 35px;
+
+    li {
+      padding: 10px 10px;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 350px) {
+  .main-menu {
+    height: 40px;
+
+    li {
+      padding: 10px 10px;
+      font-size: 1.1rem;
+    }
+  }
+
+  .contacts .imgContainer .imgCol {
+    img {
+      max-width: 260px;
+      max-height: 260px;
+    }
+
+    figcaption {
+      width: 260px;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .main-menu {
+    height: 50px;
+    li {
+      padding: 10px 20px;
+      font-size: 1.5rem;
+    }
+  }
+
+  .contacts .imgContainer .imgCol {
+
+    img {
+      max-width: 220px;
+      max-height: 220px;
+    }
+
+    figcaption {
+      width: 220px;
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .contacts .imgContainer .imgCol {
+
+    img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    figcaption {
+      width: 200px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    width: 67%;
+  }
+
+  aside {
+    width: 30%;
+    margin-left: 3%;
+  }
+
+  #container {
+    width: 100%;
+    max-width: $width;
+  }
+
+  .aside #geoData,
+  .aside #covid {
+    width: 95%;
+  }
+}

@@ -1,0 +1,23 @@
+.contacts {
+  text-align: center;
+  color: white;
+
+  .imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+
+    .imgCol {
+      transition: .3s;;
+
+      &:hover {
+        transform: scale(1.15);
+      }
+
+      img {
+        border-radius: 90%;
+      }
+    }
+  }
+}

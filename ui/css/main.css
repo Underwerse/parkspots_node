@@ -1,0 +1,234 @@
+header,
+nav,
+main,
+aside,
+footer {
+  display: block;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+html* {
+  padding: 0;
+  margin: 0;
+}
+
+html h2 {
+  position: relative;
+  color: #ffffff;
+  background: #2849a4;
+  text-align: center;
+  width: 100%;
+  padding: 12px 0;
+}
+
+html h3 {
+  color: white;
+  padding: 0 15px;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  text-align: center;
+  display: block;
+  background: #4a6fd3;
+  margin: 10px 0px 10px;
+  overflow: hidden;
+  border: solid 1px #000000;
+  border-radius: 6px;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+figcaption {
+  color: #FFFFFF;
+  width: 100%;
+  margin: 8px 0px 0px 0px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+p:not(#infoWindowText) {
+  color: #FFFFFF;
+}
+
+#infoWindowText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 120px;
+  position: relative;
+  text-align: left;
+}
+
+#infoWindowText img {
+  width: 30px;
+  padding-left: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#infoWindowText img:hover {
+  cursor: pointer;
+}
+
+div {
+  display: block;
+}
+
+/*--Classes and id:s--*/
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #061a40;
+  word-wrap: break-word;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 0 3px #061a40;
+          box-shadow: 0 0 0 3px #061a40;
+}
+
+.aside {
+  background-color: #061a40;
+}
+
+.aside p {
+  display: block;
+  margin: 0;
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.aside #geoData,
+.aside #covid {
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 auto 20px;
+}
+
+.aside #geoData tbody tr,
+.aside #covid tbody tr {
+  border: 1px solid grey;
+  height: 30px;
+}
+
+.aside #geoData tbody tr td,
+.aside #covid tbody tr td {
+  padding: 10px;
+}
+
+.aside #geoData tbody tr td:nth-child(odd),
+.aside #covid tbody tr td:nth-child(odd) {
+  background: #e9f1ff;
+}
+
+.aside #geoData tbody tr td:nth-child(even),
+.aside #covid tbody tr td:nth-child(even) {
+  background: #f7fcff;
+}
+
+.hidden {
+  display: none;
+}
+
+#haku {
+  margin: 10px 20px;
+}
+
+#weatherAdjuster {
+  position: relative;
+  text-align: Left;
+  margin: 0;
+}
+
+#weatherAdjuster p {
+  padding: 0 20px 20px 20px;
+}
+
+#weatherAdjuster img {
+  float: right;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.video h3,
+.backstage h3 {
+  height: 60px;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.video h3 a,
+.backstage h3 a {
+  text-decoration: none;
+  padding: 20px;
+  background-color: #d5e7ff;
+  border-radius: 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.video h3 a:hover,
+.backstage h3 a:hover {
+  background-color: #7eb6ff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.video video,
+.backstage video {
+  width: 90%;
+}
+
+.audio {
+  text-align: center;
+}
+
+.audio audio {
+  width: 80%;
+  margin: 10px 0;
+  padding-bottom: 30px;
+}
+
+.audio audio:last-child {
+  margin-bottom: 0;
+}
+
+.backstage h3 {
+  padding-top: 0;
+}
+
+#covid p {
+  padding-top: 0;
+}
+/*# sourceMappingURL=main.css.map */

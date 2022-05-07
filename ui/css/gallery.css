@@ -1,0 +1,17 @@
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gallery .item {
+  margin: 5px;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+/*# sourceMappingURL=gallery.css.map */
